@@ -14,11 +14,11 @@ let dd = fecha.getDate(),
     aa = fecha.getFullYear(),
     hoy = `${aa}-${mm}-${dd}`
 const pi = 3.1416 //constante
-//console.log("Numero1 =",num1)
-//console.log(`Numero2 =${num2}`)
-//console.log(`Fecha hoy= ${fecha}`)
-//console.log(hoy)
-// arreglos, json y objetos
+console.log("Numero1 =",num1)
+console.log(`Numero2 =${num2}`)
+console.log(`Fecha hoy= ${fecha}`)
+console.log(hoy)
+//arreglos, json y objetos
 let numeros = [1,2,3,4,5];
 let colores = ["red","green","blue"];
 
@@ -56,15 +56,15 @@ teacher.conocimientos.materias.Nivel1);//presneta un valor dentro de un arreglo 
 let n1=5
 let n2=5
 if (num1===undefined)
-    //console.log(`${num1}=undefined`);
+    console.log(`${num1}=undefined`);
 if (num2===null)
-   // console.log(`${num2}=null`);
+   console.log(`${num2}=null`);
 if (n1==0){
-   // console.log(n1);
+   console.log(n1);
 } else if(n1===n2){
-    //console.log(`${n1}=${n2}`);
+    console.log(`${n1}=${n2}`);
 } else {
-    //console.log(`${n1}!=${n2}`);
+    console.log(`${n1}!=${n2}`);
 } 
 
 //ESTRUCTURA SWITCH
@@ -72,14 +72,14 @@ let num = 5
 let rec = num % 0;
 switch (rec){
     case 0:
-        //console.log(`${rec} - ${num} es Par`);
+        console.log(`${rec} - ${num} es Par`);
         break;
     case 1:
-        //console.log(`${num} es Impar`);
+        console.log(`${num} es Impar`);
         break;
     default:
         if (isNaN(rec))// NaN un valor no valido 
-            ///console.log(`${rec}=Error`);
+            console.log(`${rec}=Error`);
         break;
 }
 
@@ -88,78 +88,78 @@ switch (rec){
 // BUCLE WHILE  
 // incremento ++
 let i=0
-//console.log("bucle while", colores)
+console.log("bucle while", colores)
 while (i< colores.length && colores//recorrer un arreglo
 [i]!="blue"){
-    //console.log(i, colores[i])
+    console.log(i, colores[i])
     i=i+1
 }
 
 // BUCLE FOR  
 // este bulce es mas usado para incremento o decrementos automaticos
-//console.log("corregido for incremento", colores)
+console.log("corregido for incremento", colores)
 for (let i=0/*solo existe en este bloque*/; 
     i<colores.length;i++/*incremento o decremento*/){
-    //console.log(i,colores[i]);
+    console.log(i,colores[i]);
 }
 
 //in
-//console.log("recorrido for in",colores);
+console.log("recorrido for in",colores);
 for(let j in colores){
-    //console.log(j,colores[j]);
+    console.log(j,colores[j]);
 }
 //of
-//console.log("recorrido for of",colores);
+console.log("recorrido for of",colores);
 for(let color of colores){
-   //console.log(color);
+   console.log(color);
 }
 //of 2 prueba
 let nombr = "Marcos"
 for(let caracter of nombr){
-    //console.log(caracter);
+    console.log(caracter);
 }
 const Personas= [
     {"nombre":"pepe","apellido":"Perez"},
     {"nombre":"ana","apellido":"Gomez"},
     {"nombre":"Daniel","apellido":"Vera"}
 ]
-//console.log("of");
+console.log("of");
 for (let persona of Personas){
-    //console.log(persona.nombre);
+    console.log(persona.nombre);
 }
 
 //recorridos de objetos iterables
-//console.log("Foreach");
+console.log("Foreach");
 Personas.forEach(persona => {
-   // if (persona.nombre !="ana") 
-       // console.log(persona.nombre)
+    if (persona.nombre !="ana") 
+        console.log(persona.nombre)
 })
 //Mapa
 const persons = Personas.map(person => person.nombre)
-//console.log("Map", persons);
+console.log("Map", persons);
 //filter
 const person = Personas.filter(person => person.nombre != "ana")
-//console.log("Filter", person);
+console.log("Filter", person);
 //Find
 const onePerson = Personas.find(person => person.nombre === "ana")
-//console.log("Find", onePerson);
+console.log("Find", onePerson);
 
 //Funciones
 function sumar(){
- //console.log(5+2);
+ console.log(5+2);
 }
-//const suma =()=>console.log("Arrow fun",5+3);
-//suma()  
-//console.log("Funcion multiplicar");
+const suma =()=>console.log("Arrow fun",5+3);
+suma()  
+console.log("Funcion multiplicar");
 function multiplicar (n1,n2){
     return n1*n2
 }
-//let resp=multiplicar (5,2)
-//console.log("Sin arrow ",resp);
-//const multi =(n1,n2) =>  n1*n2
-//console.log(multi(5,2));
+let resp=multiplicar (5,2)
+console.log("Sin arrow ",resp);
+const multi =(n1,n2) =>  n1*n2
+console.log(multi(5,2));
 
-//console.log("Funcion dividir");
+console.log("Funcion dividir");
 function dividir(n1,n2=4){
     let resp =0
     try{
